@@ -1,0 +1,7 @@
+baseURL = 'https://cyvs.galigali.club/'
+languageCode = 'zh-tw'
+title = '啟英電競DEMO'
+theme = "hugo-scroll"
+
+[markup.goldmark.renderer]
+unsafe=true

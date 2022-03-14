@@ -1,0 +1,17 @@
+<footer class="site-footer">
+  <div class="inner">
+    {{ with .Site.Params.copyright }}
+      <section class="copyright">{{ . | markdownify }}</section>{{ end }}
+
+
+    <section>{{ echoParam .Site.Params "hidebyline" }}</section>
+    {{ if ne .Site.Params.hidedesignbyline true }}
+      <section>
+        Powered by
+        <a href="https://gohugo.io/">Hugo</a>
+        &
+        <a href="https://mengxiaozhi.galigali.club">萌小志（劉訊志）</a>
+      </section>{{ end }}
+
+  </div>
+</footer>
